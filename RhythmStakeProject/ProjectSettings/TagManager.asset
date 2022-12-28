@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - NoteLine
+  - GameManager
+  - JudgeLine
   layers:
   - Default
   - TransparentFX
