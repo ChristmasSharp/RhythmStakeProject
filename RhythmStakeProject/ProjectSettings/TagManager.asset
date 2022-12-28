@@ -3,7 +3,10 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - NoteLine
+  - GameManager
+  - JudgeLine
   layers:
   - Default
   - TransparentFX
@@ -40,4 +43,10 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Judge
+    uniqueID: 3617222273
+    locked: 0
+  - name: Boundary
+    uniqueID: 1321759479
     locked: 0
