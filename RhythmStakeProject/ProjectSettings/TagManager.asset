@@ -7,6 +7,8 @@ TagManager:
   - NoteLine
   - GameManager
   - JudgeLine
+  - ScoreBoard
+  - MainPanel
   layers:
   - Default
   - TransparentFX

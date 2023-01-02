@@ -26,10 +26,7 @@ public class NoteModule : MonoBehaviour
     void Update()
     {
         transform.localPosition += Vector3.forward * velocity * Time.deltaTime;
-
-        if (NoteTime <= Line.gameManager.getTime())
-        {
-            gameObject.SetActive(false);
-        }
     }
+
+
 }
