@@ -269,6 +269,8 @@ GameObject:
   - component: {fileID: 620758510}
   - component: {fileID: 620758512}
   - component: {fileID: 620758511}
+  - component: {fileID: 620758513}
+  - component: {fileID: 620758514}
   m_Layer: 0
   m_Name: GameRoot
   m_TagString: GameManager
@@ -303,6 +305,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67c22ef77c5c352469d66ce1b2de25aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameOptions: {fileID: 0}
   notePrefab: {fileID: 7197852131685456491, guid: 9ac49e1fc74d7084aa95558d500ab49c, type: 3}
 --- !u!114 &620758512
 MonoBehaviour:
@@ -314,6 +317,31 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0577f1929aa649e44913d1e22e1643cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &620758513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 620758509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c19d929d363e7584b8935659155b2eb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ScoreUI: {fileID: 0}
+--- !u!114 &620758514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 620758509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cde8c0f41a32f84abe28c34a5b48b91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &917003039
