@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4496954113488377269}
   m_Layer: 0
   m_Name: MainPanel
-  m_TagString: Untagged
+  m_TagString: MainPanel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -272,7 +272,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5374472361063759485, guid: 2e2135e8e228b724ca6c8f39ab28201d, type: 3}
       propertyPath: m_Name
-      value: Note3Line
+      value: Note2Line
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2e2135e8e228b724ca6c8f39ab28201d, type: 3}
@@ -334,7 +334,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5374472361063759485, guid: 2e2135e8e228b724ca6c8f39ab28201d, type: 3}
       propertyPath: m_Name
-      value: Note2Line
+      value: Note1Line
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2e2135e8e228b724ca6c8f39ab28201d, type: 3}
@@ -396,7 +396,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5374472361063759485, guid: 2e2135e8e228b724ca6c8f39ab28201d, type: 3}
       propertyPath: m_Name
-      value: Note4Line
+      value: Note3Line
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2e2135e8e228b724ca6c8f39ab28201d, type: 3}
@@ -458,7 +458,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5374472361063759485, guid: 2e2135e8e228b724ca6c8f39ab28201d, type: 3}
       propertyPath: m_Name
-      value: Note1Line
+      value: Note0Line
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2e2135e8e228b724ca6c8f39ab28201d, type: 3}

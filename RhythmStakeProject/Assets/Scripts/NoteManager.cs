@@ -4,18 +4,14 @@ using UnityEngine;
 
 public class NoteManager : MonoBehaviour
 {
-    private LineManager[] lines = new LineManager[4];
+    public GameOptions gameOptions;
 
     public GameObject notePrefab;
 
     // Start is called before the first frame update
     void Start()
     {
-        for (int i = 0; i < lines.Length; i++)
-        {
-            string lineName = "Note" + (i + 1).ToString() + "Line";
-            lines[i] = GameObject.Find(lineName).GetComponent<LineManager>();
-        }
+        gameOptions = GameObject.FindWithTag("GameManager").GetComponent<GameOptions>();
 
         //json parsing
 
@@ -38,7 +34,7 @@ public class NoteManager : MonoBehaviour
             
             noteInfo.NoteTime = i + 3;
             
-            noteInfo.Line = lines[noteLine[i]];
+            noteInfo.Line = gameOptions.GetLines()[noteLine[i]];
             noteInfo.Line.putNote(noteInfo);
 
             noteInfo.isEndInit = true;
