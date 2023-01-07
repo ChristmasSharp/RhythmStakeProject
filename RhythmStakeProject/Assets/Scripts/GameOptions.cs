@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameOptions : MonoBehaviour
 {
-    
+    public GameObject MainPanel;
     private LineManager[] lines = new LineManager[4];
 
     private float time;
@@ -14,11 +14,11 @@ public class GameOptions : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        GameObject mainPanel = GameObject.FindWithTag("MainPanel");
+        MainPanel = GameObject.FindWithTag("MainPanel");
         for (int i = 0; i < lines.Length; i++)
         {
             string lineName = "Note" + i.ToString() + "Line";
-            lines[i] = mainPanel.transform.Find(lineName).GetComponent<LineManager>();
+            lines[i] = MainPanel.transform.Find(lineName).GetComponent<LineManager>();
         }
 
         time = 0.0f;

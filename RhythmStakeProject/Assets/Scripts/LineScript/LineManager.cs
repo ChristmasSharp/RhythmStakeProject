@@ -6,8 +6,6 @@ public class LineManager : MonoBehaviour
 {
     public GameOptions gameManager;
     public JudgeModule judge;
-
-    private GameObject MainPanel;
     private GameObject judgeLine;
 
     private float judgeLineOffset;
@@ -26,8 +24,6 @@ public class LineManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        MainPanel = transform.parent.gameObject;
-
         judge = GetComponent<JudgeModule>();
 
         judgeLine = GameObject.FindWithTag("JudgeLine");
@@ -49,11 +45,9 @@ public class LineManager : MonoBehaviour
 
             if (nextNote.NoteTime - gameManager.GetTime() <= slideTime)
             {
-                nextNote.transform.rotation = MainPanel.transform.rotation;
-
                 nextNote.transform.localPosition = Vector3.back *
-                ((nextNote.NoteTime - gameManager.GetTime()) * noteVelocity) 
-                + (Vector3.forward * judgeLineOffset);
+                                                   ((nextNote.NoteTime - gameManager.GetTime()) * noteVelocity) 
+                                                   + (Vector3.forward * judgeLineOffset);
 
                 nextNote.velocity = noteVelocity;
 

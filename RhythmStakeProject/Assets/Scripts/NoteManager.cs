@@ -30,6 +30,9 @@ public class NoteManager : MonoBehaviour
         {
             GameObject note = Instantiate(notePrefab) as GameObject;
 
+            note.transform.rotation = gameOptions.MainPanel.transform.rotation;
+            Vector3.Scale(note.transform.localScale, gameOptions.MainPanel.transform.localScale);
+            
             NoteModule noteInfo = note.GetComponent<NoteModule>();
             
             noteInfo.NoteTime = i + 3;
